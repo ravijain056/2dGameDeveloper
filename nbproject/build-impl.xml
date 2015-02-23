@@ -1193,7 +1193,7 @@ is divided into following sections:
                 ===============
             -->
     <target depends="init" if="have.sources" name="-javadoc-build">
-        <mkdir dir="${dist.javadoc.dir}"/>
+        <mkdir dir="${javadoc.dir}"/>
         <condition else="" property="javadoc.endorsed.classpath.cmd.line.arg" value="-J${endorsed.classpath.cmd.line.arg}">
             <and>
                 <isset property="endorsed.classpath.cmd.line.arg"/>
