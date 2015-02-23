@@ -111,7 +111,7 @@ public class Tempestas {
                                 bstartscreen = false;
                                 break;
                             } catch (SQLException ex) {
-                                if (ex.getErrorCode() == 1049) {
+                                if (ex.getErrorCode() == 1049 || ex.getErrorCode() == 0) {
                                     int cont = JOptionPane.showConfirmDialog(null, "It seems that the game is not installed properly. "
                                             + "\nIts autosave feature is not functioning correctly. "
                                             + "\nStill the game can be played keeping this feature off."
